@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = "TestUploadCocoapods"
-s.version = "0.0.4"
+s.version = "0.0.5"
 s.summary = "集成Masonry"
 s.description = "添加第三方库测试一下"
 s.homepage = "https://github.com/lsc01/TestUploadCocoapods"
@@ -11,5 +11,5 @@ s.source = { :git => "https://github.com/lsc01/TestUploadCocoapods.git", :tag =>
 s.source_files = 'CocoapodsFile/*.{h,m}'
 s.requires_arc = true
 s.framework = "UIKit"
-s.dependency  = "Masonry" 
+s.dependency "Masonry", "~> 1.1.0"
 end
