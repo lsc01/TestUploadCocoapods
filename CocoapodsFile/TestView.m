@@ -7,15 +7,41 @@
 //
 
 #import "TestView.h"
+#import "Masonry.h"
+
+@interface TestView ()
+
+@property (nonatomic ,strong) UILabel * labelTest;
+
+@end
 
 @implementation TestView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setSubView];
+    }
+    return self;
 }
-*/
 
+-(void)setSubView{
+    [self addSubview:self.labelTest];
+    [self.labelTest mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(25);
+    }];
+    
+    
+}
+
+-(UILabel *)labelTest{
+    if (_labelTest == nil) {
+        _labelTest = [[UILabel alloc] init];
+        _labelTest.text = @"labelTest";
+    }
+    return _labelTest;
+}
 @end

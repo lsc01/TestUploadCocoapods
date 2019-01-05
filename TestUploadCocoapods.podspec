@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 s.name = "TestUploadCocoapods"
-s.version = "0.0.1"
-s.summary = "第一个版本"
-s.description = "第一个版本描述"
+s.version = "0.0.2"
+s.summary = "第二个版本"
+s.description = "第二个版本描述"
 s.homepage = "https://github.com/lsc01/TestUploadCocoapods"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "lsc" => "942776524@qq.com" }
