@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = "TestUploadCocoapods"
-s.version = "0.0.5"
+s.version = "0.0.6"
 s.summary = "集成Masonry"
 s.description = "添加第三方库测试一下"
 s.homepage = "https://github.com/lsc01/TestUploadCocoapods"
